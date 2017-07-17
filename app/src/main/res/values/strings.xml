@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Likhopadd</string>
+    <string name="own_name">Abhishek Kumar</string>
+    <string name="help">help</string>
+    <string name="setting">setting</string>
+
+    <string name="drawer_open">Drawer is opened</string>
+    <string name="drawer_close">Drawer is closed</string>
+    <string-array name="drawer">
+        <item>abhishek</item>
+        <item>jitu</item>
+        <item>abhishek</item>
+        <item>abhishek</item>
+        <item>abhishek</item>
+    </string-array>
+    <string name="title_activity_my_">My_Activity</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--android:layout_below="@id/createxml_top_tool_bar_below_lining"-->
+
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:id="@+id/createxml_layout_id">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:id="@+id/createxml_top_tool_bar"-->
+        <!--android:padding="10dp">-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/delete2"-->
+            <!--android:background="@color/mainColor"-->
+            <!--android:id="@+id/createxml_delete_id"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="Preview"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:background="@color/mainColor"-->
+            <!--android:id="@+id/createxml_preview_id"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:text="Publish"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@color/mainColor"-->
+            <!--android:id="@+id/createxml_publish_id"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.3dp"-->
+        <!--android:background="@color/mainColor"-->
+        <!--android:id="@+id/createxml_top_tool_bar_below_lining"-->
+        <!--android:layout_below="@id/createxml_top_tool_bar"-->
+        <!--android:elevation="4dp"/>-->
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        
+        <EditText
+            android:id="@+id/createxml_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scrollHorizontally="true"
+            android:hint="Title"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:maxLength="20"
+            android:autoText="false"
+            android:inputType="textPersonName"
+            android:gravity="fill_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/lining"/>
+
+       <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:hint="CONTENT HERE"
+            android:id="@+id/createxml_content_id"
+            android:layout_below="@id/createxml_title_id"
+            android:textSize="14sp"
+           android:gravity="top"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    app:fabSize="mini"
+    android:elevation="5dp"
+
+    android:src="@drawable/ic_eject_white_24dp"
+    app:backgroundTint="@color/mainColor">
+
+</android.support.design.widget.FloatingActionButton>
+
+    <include layout="@layout/threefab"/>
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
